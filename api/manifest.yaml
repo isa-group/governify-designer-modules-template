@@ -1,0 +1,23 @@
+id: template-module
+title: Template Designer Module
+description: This is a Governify Designer template module.
+apiVersion: '2'
+helpUri: /statics/help.html
+models:
+  - id: tmpl                                  
+    extension: tmpl                           # Module file extension
+    name: Template                            # File UI text visible for users
+    syntaxes:
+      - id: tmpl                              
+        readOnly: false                       # Enables/disables file modification
+        editorModeId: ace/mode/xml            # Ace mode id
+        editorModeURI: mode-xml.js            # Mode file URI located on /modes
+        editorThemeId: ace/theme/chrome       # Ace theme id
+        editorThemeURI: theme-chrome.js       # Theme file URI located on /modes
+        syntaxCheck: false                    # Enables/disables syntax check operation
+        consistencyCheck: false               # Enables/disables consistency check operation
+    operations:                               # Array of module operations
+      - id: sampleOperation                   # Operation id that will be also used on its implementation
+        name: Run                             # Operation UI text visible for users
+        description: Description of run sample operation.   # Description of operation
+        type: simple                          # Type of operation
