@@ -1,2 +1,2 @@
-# Governify Designer Module Minizinc
-This is a MiniZinc NodeJS module for Governify Designer application.
+# Governify Designer Template Module
+This is a sample Governify Designer Template Module.
